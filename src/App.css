@@ -1,0 +1,17 @@
+/*BrandName*/
+.BrandName {
+  position: fixed;
+  top: 0px;
+  left: 80px;
+  width: 70px;
+  height: 100vh;
+  font-family: "Courier New", monospace;
+  font-size: 25.5px;
+  background-color: rgba(13, 50, 52, 0.668);
+  transform: scaleX(1.5);
+  text-align: center;
+}
+.Letters {
+  margin-bottom: -12px;
+}
+/* */
