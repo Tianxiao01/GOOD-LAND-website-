@@ -1,47 +1,13 @@
 import { useState } from "react";
-import BrandName from "./BrandName";
+import IntroText from "./Intro_text";
+import Logo from "./Logo";
 import "./App.css";
 
 function App() {
   return (
     <div>
-      <BrandName
-        brand_name={[
-          "G",
-          "O",
-          "O",
-          "D",
-          " ",
-          "L",
-          "A",
-          "N",
-          "D",
-          " ",
-          "H",
-          "O",
-          "M",
-          "E",
-          " ",
-          "A",
-          "N",
-          "D",
-          " ",
-          "E",
-          "S",
-          "S",
-          "E",
-          "N",
-          "T",
-          "I",
-          "A",
-          "L",
-          "S",
-          " ",
-          "L",
-          "T",
-          "D",
-        ]}
-      />
+      <Logo></Logo>
+      <IntroText layout="intro_layout1" />
     </div>
   );
 }
