@@ -1,12 +1,14 @@
 interface Props {
   layout: string;
+  content: string[];
 }
 
-const IntroText = ({ layout }: Props) => {
+const IntroText = ({ layout, content }: Props) => {
   return (
     <div className={layout}>
-      <div>GOOD LAND</div>
-      <div>HOME AND ESSENTIALS LTD</div>
+      {content.map((item, index) => (
+        <div key={index}>{item}</div>
+      ))}
     </div>
   );
 };
