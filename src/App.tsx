@@ -11,7 +11,11 @@ function App() {
       <Logo />
       <IntroText
         layout="intro_layout1"
-        content={["GOOD LAND", "HOME AND ESSENTiALS LTD"]}
+        content={["GOOD LAND", "HOME AND ESSENTIALS LTD"]}
+      />
+      <IntroText
+        layout="intro_layout2"
+        content={["LONG-TERM", "HIGH QUALITY RENTAL"]}
       />
     </div>
   );

@@ -2,11 +2,11 @@
 
 /*introduction*/
 .intro_layout1 {
-  position: relative;
+  position: absolute;
   top: 35vh;
   left: 45vw;
   width: 100vh;
-  height: 100px;
+  height: auto;
   font-family: "Courier New", monospace;
   font-size: 3.1vw;
   transform: scaleX(1.2);
@@ -17,6 +17,25 @@
 .intro_layout1:hover {
   text-shadow: 0 0 5px rgba(252, 252, 252, 0.8),
     0 0 10px rgba(189, 189, 177, 0.923), 0 0 20px rgba(99, 98, 96, 0.778);
+  transform: scaleX(1.2) translateY(-20px);
+}
+
+.intro_layout2 {
+  position: absolute;
+  top: 135vh;
+  left: 15vw;
+  width: 100vh;
+  height: auto;
+  font-family: "Courier New", monospace;
+  font-size: 3.1vw;
+  transform: scaleX(1.2);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.intro_layout2:hover {
+  text-shadow: 0 0 5px rgba(182, 227, 223, 0.847),
+    0 0 10px rgba(189, 237, 232, 0.923), 0 0 20px rgba(248, 238, 220, 0.778);
   transform: scaleX(1.2) translateY(-20px);
 }
 
