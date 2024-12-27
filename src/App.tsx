@@ -22,6 +22,10 @@ function App() {
         layout="intro_layout3"
         content={["SHORT-TERM", "ECONOMICAL RENTAL"]}
       />
+      <IntroText
+        layout="intro_layout4"
+        content={["UPCOMING", "FANCINATING PROJECT"]}
+      />
       <Bottom />
     </div>
   );

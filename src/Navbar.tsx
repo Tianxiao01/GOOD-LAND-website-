@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <ul className="NavBar">
       {subpages.map((subpage, index) => (
-        <li key={index} className="subpage">
+        <li key={index} className="subpage" style={{ cursor: "pointer" }}>
           {subpage}
         </li>
       ))}
