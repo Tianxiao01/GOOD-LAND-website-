@@ -1,4 +1,4 @@
-import GOOD_LAND_logo from "./assets/good_land_logo.png";
+import GOOD_LAND_logo from "../../assets/good_land_logo.png";
 
 const Logo = () => {
   return (
