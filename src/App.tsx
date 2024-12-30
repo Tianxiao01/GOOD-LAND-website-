@@ -8,8 +8,7 @@ import ShortTerm from "./pages/ShortTerm/ShortTerm";
 //css
 import "./App.css";
 //React Router
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
