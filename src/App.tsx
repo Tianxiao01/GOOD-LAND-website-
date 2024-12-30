@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Navbar from "./Navbar";
 //importing subpages
 import Home from "./pages/Home/Home";
 import LongTerm from "./pages/LongTerm/LongTerm";
@@ -19,9 +20,9 @@ function App() {
           <Route path="/LongTerm" element={<LongTerm />} />
           <Route path="/Future" element={<Future />} />
           <Route path="/ShortTerm" element={<ShortTerm />} />
-
         </Routes>
       </div>
+      <Navbar />
     </Router>
   );
 }
