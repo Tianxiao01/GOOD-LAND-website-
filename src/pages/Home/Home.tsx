@@ -1,6 +1,5 @@
 import IntroText from "./Intro_text";
 import Logo from "./Logo";
-import Navbar from "./Navbar";
 import Bottom from "./Bottom";
 import React from "react";
 import "./Home.css";
@@ -10,8 +9,8 @@ const Home = () => {
   return (
     <div>
       <Top />
-      <Navbar />
-      <Logo />
+
+
       <IntroText
         layout="intro_layout1"
         content={["GOOD LAND", "HOME AND ESSENTIALS LTD"]}
