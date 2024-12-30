@@ -8,9 +8,6 @@ import Top from "./Top";
 const Home = () => {
   return (
     <div>
-      <Top />
-
-
       <IntroText
         layout="intro_layout1"
         content={["GOOD LAND", "HOME AND ESSENTIALS LTD"]}
