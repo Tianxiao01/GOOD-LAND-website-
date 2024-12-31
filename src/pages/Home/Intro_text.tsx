@@ -35,14 +35,19 @@ const IntroText = ({ layout, content, path, height_fadeaway, img }: Props) => {
     };
   }, []);
 
+  const number_of_layout = Number(layout.charAt(12));
+
   return (
     <>
       <div style={{ position: "relative" }}>
         <img
           src={img === "img1" ? img1 : img === "img2" ? img2 : img1}
           alt="img_1"
+          className={
+            number_of_layout % 2 === 0 ? "introBackground2" : "introBackground1"
+          }
           style={{
-            opacity: opacity - 0.3,
+            opacity: opacity - 0.2,
             width: "100vw",
             height: "100vh",
             zIndex: "1",

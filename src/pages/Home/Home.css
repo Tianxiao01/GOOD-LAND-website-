@@ -82,17 +82,34 @@
   transform: scaleX(1);
 }
 
-.introBackground {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  z-index: "2";
-  background: linear-gradient(
-    to left,
-    rgba(205, 205, 199, 1) 0%,
-    rgba(205, 205, 199, 0.8) 50%,
-    rgba(205, 205, 199, 0) 100%
+.introBackground1 {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.1) 100%
   );
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+.introBackground2 {
+  -webkit-mask-image: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  mask-image: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
 
 /*logo */
