@@ -1,15 +1,18 @@
 import Bottom from "./Bottom";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import img1 from "../../assets/tmp_img1.jpg";
+import img2 from "../../assets/tmp_img2.jpg";
 
 interface Props {
   layout: string;
   content: string[];
   path: string;
+  img: string;
   height_fadeaway: number;
 }
 
-const IntroText = ({ layout, content, path, height_fadeaway }: Props) => {
+const IntroText = ({ layout, content, path, height_fadeaway, img }: Props) => {
   const [opacity, setOpacity] = useState(1);
 
   const handleScroll = () => {
@@ -33,22 +36,37 @@ const IntroText = ({ layout, content, path, height_fadeaway }: Props) => {
   }, []);
 
   return (
-    <Link to={path} style={{ textDecoration: "none", color: "inherit" }}>
-      <div
-        className={layout}
-        id="IntroText"
-        style={{ cursor: "pointer", opacity: opacity }}
-      >
-        <div>
-          {content.map((item, index) => (
-            <div key={index}>{item}</div>
-          ))}
-        </div>
-        <div id="Guide">
-          Learn More —<span className="arrow">&gt;</span>
-        </div>
+    <>
+      <div style={{ position: "relative" }}>
+        <img
+          src={img === "img1" ? img1 : img === "img2" ? img2 : img1}
+          alt="img_1"
+          style={{
+            opacity: opacity - 0.3,
+            width: "100vw",
+            height: "100vh",
+            zIndex: "1",
+          }}
+        ></img>
       </div>
-    </Link>
+
+      <Link to={path} style={{ textDecoration: "none", color: "inherit" }}>
+        <div
+          className={layout}
+          id="IntroText"
+          style={{ cursor: "pointer", opacity: opacity, zIndex: "3" }}
+        >
+          <div>
+            {content.map((item, index) => (
+              <div key={index}>{item}</div>
+            ))}
+          </div>
+          <div id="Guide">
+            Learn More —<span className="arrow">&gt;</span>
+          </div>
+        </div>
+      </Link>
+    </>
   );
 };
 

@@ -21,24 +21,28 @@ const Home = () => {
         layout="intro_layout1"
         content={["GOOD LAND", "HOME AND ESSENTIALS LTD"]}
         path={subpages[0].path}
+        img="img1"
         height_fadeaway={subpages[0].height_fadeaway}
       />
       <IntroText
         layout="intro_layout2"
         content={["LONG-TERM", "HIGH QUALITY RENTAL"]}
         path={subpages[1].path}
+        img="img2"
         height_fadeaway={subpages[1].height_fadeaway}
       />
       <IntroText
         layout="intro_layout3"
         content={["SHORT-TERM", "ECONOMICAL RENTAL"]}
         path={subpages[2].path}
+        img="img1"
         height_fadeaway={subpages[2].height_fadeaway}
       />
       <IntroText
         layout="intro_layout4"
         content={["UPCOMING", "FANCINATING PROJECT"]}
         path={subpages[3].path}
+        img="img2"
         height_fadeaway={subpages[3].height_fadeaway}
       />
       <Bottom />
