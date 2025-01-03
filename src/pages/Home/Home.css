@@ -82,6 +82,36 @@
   transform: scaleX(1);
 }
 
+.introBackground1 {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+.introBackground2 {
+  -webkit-mask-image: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  mask-image: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
 /*logo */
 .img {
   top: 0px;
@@ -89,6 +119,7 @@
   height: auto;
   position: fixed;
   transition: transform 0.8s ease;
+  z-index: 3;
 }
 
 .img:hover {
@@ -97,16 +128,19 @@
 
 /* NavBar*/
 .NavBar {
-  font-family: "Courier New", monospace;
-  font-size: 1.6vw;
+  font-family: "Lucida Handwriting", Cursive;
+  width: 100vw;
+  font-size: 1.8vw;
   top: 0px;
   position: fixed;
-  right: 16vw;
+  left: 10vw;
   list-style-type: none;
   display: flex;
   gap: 8vw;
   padding: 0;
   margin: 4vh;
+  opacity: 0.7;
+  z-index: 3;
 }
 
 .subpage {
@@ -149,9 +183,9 @@
 .Top {
   background: linear-gradient(
     to bottom,
-    rgba(249, 236, 170, 1) 0%,
-    rgba(249, 236, 170, 0.6) 50%,
-    rgba(249, 236, 170, 0) 100%
+    rgba(185, 185, 183, 1) 0%,
+    rgba(185, 185, 183, 0.8) 50%,
+    rgba(185, 185, 183, 0) 100%
   );
   position: fixed;
   top: 0px;
