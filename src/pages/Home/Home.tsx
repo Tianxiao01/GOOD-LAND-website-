@@ -6,10 +6,10 @@ import "./Home.css";
 import Top from "./Top";
 
 const subpages = [
-  { name: "Long-Term Rental", path: "/", height_fadeaway: 0 },
-  { name: "Long-Term Rental", path: "/LongTerm", height_fadeaway: 100 },
-  { name: "Short-Term Rental", path: "/ShortTerm", height_fadeaway: 200 },
-  { name: "Upcoming Products", path: "/Future", height_fadeaway: 300 },
+  { name: "Long-Term Rental", path: "/", height_fadeaway: -90 },
+  { name: "Long-Term Rental", path: "/LongTerm", height_fadeaway: 10 },
+  { name: "Short-Term Rental", path: "/ShortTerm", height_fadeaway: 110 },
+  { name: "Upcoming Products", path: "/Future", height_fadeaway: 210 },
 ];
 
 const Home = () => {

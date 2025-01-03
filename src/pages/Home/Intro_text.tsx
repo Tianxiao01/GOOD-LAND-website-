@@ -18,13 +18,15 @@ const IntroText = ({ layout, content, path, height_fadeaway, img }: Props) => {
   const handleScroll = () => {
     const viewportHeight = window.innerHeight;
     const scrollY = (window.scrollY / viewportHeight) * 100;
-    const Height_begin_fade = height_fadeaway;
+    const Height_begin_animation = height_fadeaway;
 
     const newopacity =
-      scrollY >= Height_begin_fade
-        ? Math.max(1 - (scrollY - Height_begin_fade) / 45, 0)
-        : 1;
+      scrollY >= Height_begin_animation
+        ? Math.max(1 - Math.abs(scrollY - (Height_begin_animation+90)) / 90, 0)
+        : 0;
     setOpacity(newopacity);
+    console.log(scrollY);
+
   };
 
   useEffect(() => {
@@ -47,7 +49,7 @@ const IntroText = ({ layout, content, path, height_fadeaway, img }: Props) => {
             number_of_layout % 2 === 0 ? "introBackground2" : "introBackground1"
           }
           style={{
-            opacity: opacity - 0.2,
+            opacity: opacity,
             width: "100vw",
             height: "100vh",
             zIndex: "1",
