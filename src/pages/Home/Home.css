@@ -207,7 +207,7 @@
   z-index: 1;
 }
 
-.Additional_info{
+.Additional_info1{
   position: absolute;
   z-index: 3;
   color:white;
@@ -216,6 +216,17 @@
   font-size: 2vh;
   top: 5vh;
   left: 10vw;
+}
+
+.Additional_info2{
+  position: absolute;
+  z-index: 3;
+  color:white;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 2vh;
+  top: 5vh;
+  right: 10vw;
 }
 
 /*top*/
