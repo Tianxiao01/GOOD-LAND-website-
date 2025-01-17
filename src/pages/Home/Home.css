@@ -22,6 +22,12 @@
   src: url(../../assets/fonts/Roboto-Black.ttf);
 }
 
+@font-face {
+  font-family: "Oswald";
+  font-weight: 700;
+  src: url(../../assets/fonts/Oswald/static/Oswald-SemiBold.ttf);
+}
+
 /* root */
 
 /*introduction*/
@@ -139,7 +145,8 @@
 /*logo */
 .img {
   top: 0px;
-  width: 9vw;
+  left: 1vw;
+  width: 6vw;
   height: auto;
   position: fixed;
   transition: transform 0.8s ease;
@@ -152,18 +159,18 @@
 
 /* NavBar*/
 .NavBar {
-  font-family: "Courier New", monospace;
-  font-weight: 500;
+  font-family: "Oswald";
+  font-weight: 700;
   transform:scaleX(0.95);
-  color:rgb(232, 238, 230);
+  color:rgb(255, 255, 255);
   width: 100vw;
-  font-size: 2vw;
+  font-size:clamp(10px, 1vw, 100px);
   top: 0px;
   position: fixed;
-  left: 10vw;
+  left: 16vw;
   list-style-type: none;
   display: flex;
-  gap: 8vw;
+  gap: 20vw;
   padding: 0;
   margin: 4vh;
   opacity: 0.7;
@@ -232,16 +239,16 @@
 /*top*/
 .Top {
   background: linear-gradient(
-    to bottom,
+    to left,
     rgba(110, 110, 109,1) 0%,
-    rgba(110, 110, 109, 0.829) 30%,
-    rgba(110, 110, 109, 0.452) 90%,
-    rgba(110, 110, 109, 0) 100%
+    rgba(110, 110, 109, 1) 50%,
+    rgba(110, 110, 109, 0.6) 90%,
+    rgba(110, 110, 109, 0.2) 100%
   );
   position: fixed;
   top: 0px;
   left: 0px;
   width: 100vw;
-  height: 16vh;
+  height: 12vh;
   z-index: 4;
 }
