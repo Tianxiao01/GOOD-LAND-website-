@@ -1,4 +1,6 @@
 .listing-card {
+    position: relative;
+    top: 30vh;
     margin-right: 10%;
     margin-left: 10%;
 
