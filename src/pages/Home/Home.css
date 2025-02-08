@@ -148,9 +148,9 @@
 /*top*/
 .Top {
   background: linear-gradient(to bottom,
-      rgb(203, 203, 203) 0%,
-      rgba(182, 182, 182, 0.6) 50%,
-      rgba(198, 198, 198, 0) 100%);
+        rgba(185, 185, 183, 1) 0%,
+        rgba(185, 185, 183, 0.8) 50%,
+        rgba(185, 185, 183, 0) 100%);
   position: fixed;
   top: 0px;
   left: 0px;
