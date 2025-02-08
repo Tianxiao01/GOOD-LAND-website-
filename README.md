@@ -18,7 +18,7 @@ Check out the live website here: **[Good Land Home and Essentials](https://tianx
 
 ## 📌 Getting Started  
 To run the project locally:  
-git clone https://github.com/yourusername/good-land-home.git  
+git clone https://github.com/Tianxiao01/GOOD-LAND-website-.git
 cd good-land-home  
 npm install  
 npm run dev  
