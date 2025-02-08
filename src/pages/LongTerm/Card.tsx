@@ -68,11 +68,11 @@ const Card = ({ imageUrl, name, avaibility, propertyTitle, bedNum, bathNum, slee
                             <div className="amenity-item">&#128663; Parking available</div>
                             <div className="amenity-item">&#127777; Air conditioning</div>
                         </div>
-                        <a href="#" className="see-more-link">See all property amenities</a>
+                        <a href={airbnbLink} className="see-more-link">See all property amenities</a>
                     </div>
                 </div>
                 <div className="rightCard">
-                    <div className="price-section">Price: <strong>CA ${price}/night</strong></div>
+                    <div className="price-section">Price: CA ${price}/night</div>
                     <div className="map-section">
                         {/* Replace with Google Maps Embed API */}
                         <iframe
