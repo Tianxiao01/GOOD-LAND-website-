@@ -1,5 +1,6 @@
 import Logo from "./pages/Home/Logo";
 import { Link } from "react-router-dom";
+import Top from "./pages/Home/Top";
 
 const subpages = [
   { name: "Long-Term Rental", path: "/LongTerm" },
@@ -10,9 +11,11 @@ const subpages = [
 const Navbar = () => {
   return (
     <>
+      <Top />
       <Link to="/" style={{ textDecoration: "none" }}>
         <Logo />
       </Link>
+
       <ul className="NavBar">
         {subpages.map((subpage, index) => (
           <li key={index} className="subpage" style={{ cursor: "pointer" }}>

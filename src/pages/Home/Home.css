@@ -55,7 +55,7 @@
 
 #IntroText:hover {
   text-shadow: 0 0 5px rgba(252, 252, 252, 0.8),
-    0 0 10px rgba(189, 189, 177, 0.923), 0 0 20px rgba(99, 98, 96, 0.778);
+    0 0 10px rgba(189, 183, 177, 0.923), 0 0 20px rgba(99, 98, 96, 0.778);
   transform: scaleX(1.2) translateY(-20px);
 }
 
