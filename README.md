@@ -10,8 +10,6 @@ Welcome to **Good Land Home and Essentials**, a modern and responsive real estat
 
 ## 🛠️ Tech Stack  
 - **Frontend:** React + TypeScript + Vite  
-- **State Management:** (If using Redux, Zustand, or Context API, mention it)  
-- **Backend:** (Mention if there’s an API or Firebase integration)  
 
 ## 🚀 Live Demo  
 Check out the live website here: **[Good Land Home and Essentials](https://tianxiao01.github.io/GOOD-LAND-website-/)**
