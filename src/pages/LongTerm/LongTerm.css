@@ -48,7 +48,8 @@
 }
 
 .info-container {
-    padding: 40px;
+    padding-left: 20px;
+    padding-right: 40px;
     display: flex;
     flex-wrap: wrap;
     /* Allows content to wrap on smaller screens */
@@ -148,6 +149,133 @@
     box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.property-container {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+    max-width: 800px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: 0px;
+    
+}
+
+.property-header {
+    margin-bottom: 20px;
+}
+
+.property-type {
+    color: #6b7280;
+    /* Gray text */
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.property-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.property-rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.rating-score {
+    background-color: #1eaa72;
+    /* Green background */
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.rating-text {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.review-link {
+    color: #2563eb;
+    /* Blue text */
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.review-link:hover {
+    text-decoration: underline;
+}
+
+.property-details {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+    font-size: 14px;
+    color: #4b5563;
+    /* Dark gray text */
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+}
+
+.property-amenities {
+    margin-top: 20px;
+}
+
+.property-amenities h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    font-size: 14px;
+    color: #4b5563;
+    /* Dark gray text */
+}
+
+.amenity-item {
+    display: flex;
+    align-items: center;
+}
+
+.see-more-link {
+    color: #2563eb;
+    /* Blue text */
+    font-size: 14px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.see-more-link:hover {
+    text-decoration: underline;
+}
 /* Add responsive styles as needed */
 @media (max-width: 768px) {
     .info-container {
