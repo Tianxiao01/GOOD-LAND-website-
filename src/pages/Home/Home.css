@@ -1,3 +1,33 @@
+@font-face {
+  font-family: "Roboto";
+  font-weight: 500;
+  src: url(../../assets/fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 300;
+  src: url(../../assets/fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 700;
+  src: url(../../assets/fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 900;
+  src: url(../../assets/fonts/Roboto-Black.ttf);
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: 700;
+  src: url(../../assets/fonts/Oswald/static/Oswald-SemiBold.ttf);
+}
+
 /* root */
 
 /*introduction*/
@@ -18,7 +48,7 @@
   position: absolute;
   top: 135vh;
   left: 15vw;
-  width: 100vh;
+  width: 100vh;   
   height: auto;
   font-family: "Courier New", monospace;
   font-size: 3.1vw;
@@ -115,11 +145,12 @@
 /*logo */
 .img {
   top: 0px;
-  width: 9vw;
+  left: 1vw;
+  width: 6vw;
   height: auto;
   position: fixed;
   transition: transform 0.8s ease;
-  z-index: 3;
+  z-index: 4;
 }
 
 .img:hover {
@@ -128,19 +159,22 @@
 
 /* NavBar*/
 .NavBar {
-  font-family: "Lucida Handwriting", Cursive;
+  font-family: "Oswald";
+  font-weight: 700;
+  transform:scaleX(0.95);
+  color:rgb(255, 255, 255);
   width: 100vw;
-  font-size: 1.8vw;
+  font-size:clamp(10px, 1vw, 100px);
   top: 0px;
   position: fixed;
-  left: 10vw;
+  left: 16vw;
   list-style-type: none;
   display: flex;
-  gap: 8vw;
+  gap: 20vw;
   padding: 0;
   margin: 4vh;
   opacity: 0.7;
-  z-index: 3;
+  z-index: 4;
 }
 
 .subpage {
@@ -159,8 +193,8 @@
   top: 100%;
   left: 0;
   right: 0;
-  height: 1px;
-  background-color: rgba(0, 0, 0, 0.83);
+  height: 1.5px;
+  background-color: rgb(232, 238, 230);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.5s ease;
@@ -174,22 +208,47 @@
 .Bottom {
   position: absolute;
   width: 100vw;
-  height: 3vh;
+  height: 30vh;
   top: 400vh;
   background-color: rgba(0, 0, 0, 0.83);
+  z-index: 1;
+}
+
+.Additional_info1{
+  position: absolute;
+  z-index: 3;
+  color:white;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 2vh;
+  top: 5vh;
+  left: 10vw;
+}
+
+.Additional_info2{
+  position: absolute;
+  z-index: 3;
+  color:white;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 2vh;
+  top: 5vh;
+  right: 10vw;
 }
 
 /*top*/
 .Top {
   background: linear-gradient(
-    to bottom,
-    rgba(185, 185, 183, 1) 0%,
-    rgba(185, 185, 183, 0.8) 50%,
-    rgba(185, 185, 183, 0) 100%
+    to left,
+    rgba(110, 110, 109,1) 0%,
+    rgba(110, 110, 109, 1) 50%,
+    rgba(110, 110, 109, 0.6) 90%,
+    rgba(110, 110, 109, 0.2) 100%
   );
   position: fixed;
   top: 0px;
   left: 0px;
   width: 100vw;
-  height: 16vh;
+  height: 12vh;
+  z-index: 4;
 }

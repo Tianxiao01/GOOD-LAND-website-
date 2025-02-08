@@ -12,7 +12,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <Router>
+    <Router  basename="/GOOD-LAND-website-">
       <div>
         <Routes>
           <Route path="/" element={<Home />} />
