@@ -14,7 +14,7 @@ Welcome to **Good Land Home and Essentials**, a modern and responsive real estat
 - **Backend:** (Mention if there’s an API or Firebase integration)  
 
 ## 🚀 Live Demo  
-Check out the live website here: **[Good Land Home and Essentials]({https://tianxiao01.github.io/GOOD-LAND-website-/})**  
+Check out the live website here: **[Good Land Home and Essentials](https://tianxiao01.github.io/GOOD-LAND-website-/)**
 
 ## 📌 Getting Started  
 To run the project locally:  
