@@ -44,7 +44,7 @@ const Navbar = () => {
         <Logo size={width < height ? "8vh" : "6vw"} top={width < height ? "2vw" : "0px"} />
       </Link>
 
-      <ul className="NavBar" style={{gap:width < height ? "8vh": undefined,left:width < height ? "7vw": undefined }}>
+      <ul className="NavBar" style={{gap:width < height ? "3vh": undefined,left:width < height ? "5.5vh": undefined }}>
         {subpages.map((subpage, index) => (
           <li key={index} className="subpage" style={{  cursor: "pointer",fontSize: width < height ? "1.8vh" : undefined  }}>
             <Link to={subpage.path} style={{ textDecoration: "none", color: "inherit" }}>

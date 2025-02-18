@@ -12,6 +12,29 @@ interface Props {
   height_fadeaway: number;
 }
 
+const useWindowSize = () => {
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  return windowSize;
+};
+
 const IntroText = ({ layout, content, path, height_fadeaway, img }: Props) => {
   const [opacity, setOpacity] = useState(1);
 
@@ -38,6 +61,7 @@ const IntroText = ({ layout, content, path, height_fadeaway, img }: Props) => {
   }, []);
 
   const number_of_layout = Number(layout.charAt(12));
+  const {width,height}=useWindowSize();
 
   return (
     <>
@@ -61,7 +85,13 @@ const IntroText = ({ layout, content, path, height_fadeaway, img }: Props) => {
         <div
           className={layout}
           id="IntroText"
-          style={{ cursor: "pointer", opacity: opacity, zIndex: "3" }}
+          style={{ cursor: "pointer", opacity: opacity, zIndex: "3",
+            ...(width < height
+              ? parseInt(layout.match(/\d+/)?.[0] || "0", 10) % 2 !== 0
+                  ? { right: "20vw" }  
+                  : { left: "20vw" } 
+              : {}),
+            fontSize:width<height ? "3.1vh":undefined }}
         >
           <div>
             {content.map((item, index) => (
