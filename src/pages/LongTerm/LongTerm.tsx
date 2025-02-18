@@ -1,12 +1,14 @@
 import React from 'react'
 import Card from "./Card";
+import cardListing1 from '../../assets/CardListing1.avif';
+import cardListing2 from '../../assets/cardPlaceHolder1.png';
 
 const LongTerm = () => {
     return (
         <div> 
             
             <Card 
-                imageUrl= '/src/assets/CardListing1.avif'
+                imageUrl= {cardListing1}
                 name= 'Cozy Cabin'
                 avaibility= 'Availible!!!'
                 propertyTitle = 'Cozy Cabin'
@@ -22,7 +24,7 @@ const LongTerm = () => {
             />
             
             <Card
-                imageUrl='/src/assets/cardPlaceHolder1.png'
+                imageUrl={cardListing2}
                 name='Lake House'
                 avaibility='Availible!!!'
                 propertyTitle='Lake House'
