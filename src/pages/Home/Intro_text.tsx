@@ -88,10 +88,11 @@ const IntroText = ({ layout, content, path, height_fadeaway, img }: Props) => {
           style={{ cursor: "pointer", opacity: opacity, zIndex: "3",
             ...(width < height
               ? parseInt(layout.match(/\d+/)?.[0] || "0", 10) % 2 !== 0
-                  ? { right: "20vw" }  
+                  ? { left: "30vw" }  
                   : { left: "20vw" } 
               : {}),
-            fontSize:width<height ? "3.1vh":undefined }}
+            fontSize:width<height ? "3.1vh":undefined,
+            width:width<height ? "62.5vw":undefined }}
         >
           <div>
             {content.map((item, index) => (

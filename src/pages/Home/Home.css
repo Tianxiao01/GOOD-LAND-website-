@@ -35,7 +35,7 @@
   position: absolute;
   top: 35vh;
   left: 45vw;
-  width: 100vh;
+  width: 100vw;
   height: auto;
   font-family: "Courier New", monospace;
   font-size: 3.1vw;
@@ -48,7 +48,7 @@
   position: absolute;
   top: 135vh;
   left: 15vw;
-  width: 100vh;   
+  width: 100vw;   
   height: auto;
   font-family: "Courier New", monospace;
   font-size: 3.1vw;
@@ -61,7 +61,7 @@
   position: absolute;
   top: 235vh;
   left: 45vw;
-  width: 100vh;
+  width: 100vw;
   height: auto;
   font-family: "Courier New", monospace;
   font-size: 3.1vw;
@@ -74,7 +74,7 @@
   position: absolute;
   top: 335vh;
   left: 15vw;
-  width: 100vh;
+  width: 100vw;
   height: auto;
   font-family: "Courier New", monospace;
   font-size: 3.1vw;
